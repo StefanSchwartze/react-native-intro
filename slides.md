@@ -13,16 +13,59 @@ Stefan Schwartze
 ## Basic components
 
 * `View`, `Scrollview`, `Text`, `Image`
----
+----
 
 ## Styling à la CSS
 ----
-* Layout with Flexbox
-----
+
 * Scoped styles out of the box
+```jsx
+...
+    <Text style={styles.heading}>Hello world!</Text>
+...
+const styles = StyleSheet.create({
+    text: {
+        fontFamily: 'Arial',
+        fontSize: 16
+    }
+});
+```
 ----
-* Composition with spreading
----
+
+* Layout with Flexbox
+```jsx
+...
+    <View style={{ flex: 1, justifyContent: 'center' }}>
+        <Text>Hello world!</Text>
+    </View>
+...
+```
+----
+
+Composition with spreading
+
+```jsx
+
+return (
+    <Text style={styles.heading}>Hello world!</Text>
+);
+
+const styles = StyleSheet.create({
+    text: {
+        fontFamily: 'Arial',
+        fontSize: 16
+    },
+    largeText: {
+        fontSize: 22
+    },
+    heading: {
+        ...text,
+        ...largeText,
+        fontWeight: 800
+    }
+});
+```
+----
 
 ## How does it work?
 ----
@@ -34,6 +77,13 @@ Stefan Schwartze
 ---
 
 ## Getting started with Expo
+----
+
+1. Bootstrap
+2. Download app
+3. Develop!
+Note:
+* Show example app with simulator
 ----
 
 ## Why use Expo?
@@ -50,33 +100,44 @@ Stefan Schwartze
 
 * Custom native code or modules required
 * Small app size matters
+Note:
+* It's always possible to eject
 ---
 
 ## Wrapping up
 ----
 
-## Pros
+### Pros
 
 * Getting started without any native skills is easy
 * Develop once, run everywhere
 * Whole power of npm modules can be used
 * Huge community (but not that huge like for React)
----
+----
 
-## Cons
+### Cons
 
 * It's alyways better to know how the native modules work
 * UX- and navigation patterns differ from web
 * Not usable for game development
 * Not all implementations perform the same on Android & iOS
+Note:
+* Browsers do a lot of optimization out of the box for us (e.g. caching)
 ---
 
-## Develop once, run **REALLY** everywhere
+Develop once, run **REALLY** everywhere
 
-**React-Native-Web**
-🤯
+## 👉 React-Native-Web
+# 🤯
+Note:
+* Integrates perfectly with Next.js
+* Used by Twitter, Uber, The Times, ...
 ---
 
 ## Sources
 
-
+* [React Native Docs](https://facebook.github.io/react-native/)
+* [Expo Docs](https://docs.expo.io/versions/latest/)
+* [Flutter vs React Native — Vitaly Kuprenko](https://levelup.gitconnected.com/flutter-vs-react-native-comparing-the-features-of-each-framework-f61bfd146a90)
+* [Introduction to React Native & Rendering - Rahat Khanna](https://www.slideshare.net/rahatkhanna/introduction-to-react-native-rendering-charts-graphs)
+* [React Native Web](https://github.com/necolas/react-native-web)

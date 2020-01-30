@@ -4,6 +4,7 @@
   "description": "This is a short talk about rendering on the web",
   "main": "index.js",
   "scripts": {
+    "start": "reveal-md slides.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,9 +22,9 @@
   },
   "homepage": "https://github.com/StefanSchwartze/rendering-on-the-web#readme",
   "dependencies": {
-    "prismjs": "^1.15.0",
-    "reveal-md": "^3.0.1",
+    "prismjs": "^1.19.0",
+    "reveal-md": "^3.4.2",
     "reveal.js-menu": "^1.2.0",
-    "reveal.js-toolbar": "^0.1.5"
+    "reveal.js-toolbar": "^0.2.1"
   }
 }
