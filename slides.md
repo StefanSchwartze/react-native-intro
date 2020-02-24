@@ -6,13 +6,13 @@ Stefan Schwartze
 
 ## What is React Native?
 
-* a JavaScript bridge for native modules
-* building components with JavaScript, React and JSX knowledge
+* a JavaScript bridge for native modules<!-- .element: class="fragment" -->
+* building components with JavaScript, React and JSX knowledge<!-- .element: class="fragment" -->
 ---
 
 ## Basic components
 
-* `View`, `Scrollview`, `Text`, `Image`
+* `View`, `Scrollview`, `Text`, `Image`, ...
 ----
 
 ## Styling à la CSS
@@ -42,7 +42,8 @@ const styles = StyleSheet.create({
 ```
 ----
 
-Composition with spreading
+* Composition with spreading
+----
 
 ```jsx
 
@@ -65,41 +66,62 @@ const styles = StyleSheet.create({
     }
 });
 ```
+<!-- .element: class="stretch" -->
 ----
 
 ## How does it work?
 ----
-
-![React Native Architecture](https://miro.medium.com/max/1600/1*331KENPILKOregPuYFbzZw.png)
+<!-- .slide: data-background-image="https://miro.medium.com/max/1600/1*331KENPILKOregPuYFbzZw.png" data-background-size="contain" -->
 ----
 
-![React Native Communication](https://image.slidesharecdn.com/introtoreactnative-170424104444/95/introduction-to-react-native-rendering-charts-graphs-9-1024.jpg?cb=1493030762)
+<!-- .slide: data-background-image="https://image.slidesharecdn.com/introtoreactnative-170424104444/95/introduction-to-react-native-rendering-charts-graphs-9-1024.jpg" data-background-size="contain" -->
 ---
 
-## Getting started with Expo
+## Getting started with 
+
+React Native CLI | **Expo CLI**
+
 ----
 
-1. Bootstrap
-2. Download app
-3. Develop!
+### 1. Install Expo CLI
+![Install](./images/install.svg)
+Note:
+```bash
+npm install -g expo-cli
+```
+----
+
+### 2. Bootstrap
+![Init](./images/init.svg)
+Note:
+```bash
+expo init
+```
+----
+### 3. Download app
+![Expo Icon](https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/65/24/19/652419e4-053e-d24a-1850-da1073f092e6/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.png)
+  * [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=de) | [iOS](https://apps.apple.com/de/app/expo-client/id982107779)
+----
+### 4. Develop!
 Note:
 * Show example app with simulator
 ----
 
 ## Why use Expo?
+----
 
-* Default way to get started without any know-how
-* Live-Reload
-* Fast testing on any device
+* Default way to get started without any know-how<!-- .element: class="fragment" -->
+* Live-Reload<!-- .element: class="fragment" -->
+* Fast testing on any device<!-- .element: class="fragment" -->
   * Also for non-devs!
-* Playground for snippets (snack.expo.io)
-* **OTA** updates!
+* Playground for snippets (snack.expo.io)<!-- .element: class="fragment" -->
+* OTA updates!<!-- .element: class="fragment" -->
 ----
 
 ## When don't use Expo?
 
-* Custom native code or modules required
-* Small app size matters
+* Custom native code or modules required<!-- .element: class="fragment" -->
+* Small app size matters<!-- .element: class="fragment" -->
 Note:
 * It's always possible to eject
 ---
@@ -109,29 +131,32 @@ Note:
 
 ### Pros
 
-* Getting started without any native skills is easy
-* Develop once, run everywhere
-* Whole power of npm modules can be used
-* Huge community (but not that huge like for React)
+* Getting started without any native skills is easy<!-- .element: class="fragment" -->
+* Develop once, run everywhere<!-- .element: class="fragment" -->
+* Whole power of npm modules can be used<!-- .element: class="fragment" -->
+* Huge community (but not that huge like for React)<!-- .element: class="fragment" -->
 ----
 
 ### Cons
 
-* It's alyways better to know how the native modules work
-* UX- and navigation patterns differ from web
-* Not usable for game development
-* Not all implementations perform the same on Android & iOS
+* It's alyways better to know how the native modules work<!-- .element: class="fragment" -->
+* UX- and navigation patterns differ from web<!-- .element: class="fragment" -->
+* Not usable for game development<!-- .element: class="fragment" -->
+* Not all implementations perform the same on Android & iOS<!-- .element: class="fragment" -->
 Note:
 * Browsers do a lot of optimization out of the box for us (e.g. caching)
 ---
 
 Develop once, run **REALLY** everywhere
 
-## 👉 React-Native-Web
-# 🤯
+## React-Native-Web<br/>
+# 🤯<!-- .element: class="fragment" -->
 Note:
 * Integrates perfectly with Next.js
 * Used by Twitter, Uber, The Times, ...
+----
+
+### 👉 [Snack](https://snack.expo.io/@stefan.schwartze/react-native-web-swiper)
 ---
 
 ## Sources
